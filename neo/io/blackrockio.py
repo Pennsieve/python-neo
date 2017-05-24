@@ -895,7 +895,7 @@ class BlackrockIO(BaseIO):
                 'a': (packet_ids == 0)},
             'Spikes': {
                 # Version 2.1 & 2.2
-                'a': (0 < packet_ids) & (packet_ids <= 255),
+                'a': (0 < packet_ids) & (packet_ids <= 512),
                 # Version>=2.3
                 'b': (0 < packet_ids) & (packet_ids <= 2048)},
             'Comments': {
