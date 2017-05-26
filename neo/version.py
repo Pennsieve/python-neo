@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-version = '100.5.2'
+version = '100.5.3'
