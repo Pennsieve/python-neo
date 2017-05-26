@@ -1925,6 +1925,8 @@ class BlackrockIO(BaseIO):
             channel_labels = self.__nev_params('channel_labels')
             if channel_labels is not None and channel_idx in channel_labels:
                 rcg.channel_names = channel_labels[channel_idx]
+            else:
+                rcg.channel_names = "Channel {0}".format(channel_idx)
 
             # additional annotations from nev
             if channel_idx in self.__nev_ext_header[b'NEUEVWAV']['electrode_id']:
