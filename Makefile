@@ -9,4 +9,4 @@ build:
 
 publish:
 	twine upload dist/* \
-		--repository-url https://nexus.blackfynn.io/repository/pypi-$(env)/
+		--repository-url https://nexus.pennsieve.io/repository/pypi-$(env)/
